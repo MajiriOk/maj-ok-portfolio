@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maj OK | Telling Data Stories</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <div class="nav__brand">
+        <span class="nav__name">Maj OK</span>
+        <span class="nav__sep">|</span>
+        <span class="nav__tagline">Telling Data Stories</span>
+      </div>
+      <ul class="nav__links">
+        <li><a href="#projects-anchor" class="nav__link">Projects</a></li>
+        <li><a href="pages/blog.html" class="nav__link">Blog</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+        <li><a href="https://github.com/MajiriOk/My-Resume/blob/main/Maj_Okrikri_Resume.pdf" target="_blank" rel="noopener noreferrer" class="nav__link nav__resume-link">Resume</a></li>
+      </ul>
+      <button class="nav__toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="toggle__icon">☾</span>
+        <span class="toggle__text">Dark</span>
+      </button>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="nav__mobile-menu" id="mobileMenu">
+      <a href="#projects-anchor" class="nav__mobile-link">Projects</a>
+      <a href="pages/blog.html" class="nav__mobile-link">Blog</a>
+      <a href="#contact" class="nav__mobile-link">Contact</a>
+      <a href="https://github.com/MajiriOk/My-Resume/blob/main/Maj_Okrikri_Resume.pdf" target="_blank" rel="noopener noreferrer" class="nav__mobile-link">Resume</a>
+      <button class="nav__toggle nav__toggle--mobile" id="themeToggleMobile" aria-label="Toggle theme">
+        <span class="toggle__icon">☾</span>
+        <span class="toggle__text">Dark</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="home">
+    <div class="container hero__inner">
+      <div class="hero__text hero-text-col">
+        <span class="hero__label hero-label">Data Analyst · Manitoba, Canada</span>
+        <h1>I help businesses make smarter decisions
+<span class="hero-accent">(with their data)</span></h1>
+        <p class="hero__sub hero-sub-tools" style="margin-bottom: 32px;">SQL · Tableau · Excel · Power BI · Business Intelligence</p>
+        <div class="hero-buttons">
+          <a href="#projects-anchor" class="btn-primary">See My Work</a>
+          <a href="#contact" class="btn-secondary">Get In Touch</a>
+        </div>
+        <div class="hero__social hero-social">
+          <a href="https://www.linkedin.com/in/majiri-ok/" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="https://github.com/MajiriOk" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero__photo hero-image-col">
+        <img class="hero__img" src="images/profile.png" alt="Majiri OK - Data Analyst" onerror="this.style.display='none'">
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects">
+  <div id="projects-anchor" style="position:relative; top:-80px;visibility:hidden;"></div>
+  <div class="container">
+    <!-- Featured Dashboards -->
+    <div class="projects-label">Featured Dashboards</div>
+    <div class="carousel-wrapper">
+      <button class="carousel-btn prev-btn" aria-label="Previous">
+        &#8592;
+      </button>
+      <div class="carousel-track-wrapper">
+        <div class="carousel-track">
+
+          <div class="project-card carousel-card">
+            <div class="project-image">
+              <img src="images/projects/churn-analysis.png"
+                   alt="Telecom Churn Analysis Dashboard"
+                   onerror="this.parentElement.classList.add('no-image')">
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Tableau</span>
+                <span class="tag">Churn Analytics</span>
+              </div>
+              <h3>Telecom Churn Analysis</h3>
+              <p>Dashboard analysing telecom customer churn patterns,
+              identifying at-risk segments and key drivers of customer
+              loss to support retention strategy decisions.</p>
+              <a href="https://public.tableau.com/app/profile/maj.okrikri/viz/TelecomChurnAnalysis_17633880092040/FinalDashboard"
+                 target="_blank" rel="noopener noreferrer"
+                 class="project-link">View Dashboard →</a>
+            </div>
+          </div>
+
+          <div class="project-card carousel-card">
+            <div class="project-image">
+              <img src="images/projects/travel-analytics.png"
+                   alt="Travel Analytics Dashboard"
+                   onerror="this.parentElement.classList.add('no-image')">
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Tableau</span>
+                <span class="tag">Dashboard</span>
+              </div>
+              <h3>Travel Analytics Dashboard</h3>
+              <p>Interactive dashboard analysing travel and marketing
+              performance trends to support strategic planning and
+              campaign decisions.</p>
+              <a href="https://public.tableau.com/app/profile/maj.okrikri/viz/ProductMarketingAnalytics_17677158036920/TravelAnalyticsDashboard"
+                 target="_blank" rel="noopener noreferrer"
+                 class="project-link">View Dashboard →</a>
+            </div>
+          </div>
+
+          <div class="project-card carousel-card">
+            <div class="project-image">
+              <img src="images/projects/superstore.png"
+                   alt="Superstore Executive Dashboard"
+                   onerror="this.parentElement.classList.add('no-image')">
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Tableau</span>
+                <span class="tag">Executive Reporting</span>
+              </div>
+              <h3>Superstore Executive Dashboard</h3>
+              <p>Executive-level dashboard tracking sales, profit, and
+              regional performance across product categories, enabling
+              leadership to monitor KPIs at a glance.</p>
+              <a href="https://public.tableau.com/app/profile/maj.okrikri/viz/SuperstoreExecutiveDashboard_17615854624540/ExecutiveDashboard"
+                 target="_blank" rel="noopener noreferrer"
+                 class="project-link">View Dashboard →</a>
+            </div>
+          </div>
+
+          <div class="project-card carousel-card">
+            <div class="project-image">
+              <img src="images/projects/maven-supplies.png"
+                   alt="Maven Supplies Retail Sales Dashboard"
+                   onerror="this.parentElement.classList.add('no-image')">
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Tableau</span>
+                <span class="tag">Retail Analytics</span>
+              </div>
+              <h3>Maven Supplies Retail Sales Dashboard</h3>
+              <p>Retail sales executive dashboard visualizing revenue
+              trends, product performance, and store-level insights to
+              drive inventory and sales strategy.</p>
+              <a href="https://public.tableau.com/app/profile/maj.okrikri/viz/MavenSuppliesRetailSalesExecutiveDashboard/ExecutiveDashboard"
+                 target="_blank" rel="noopener noreferrer"
+                 class="project-link">View Dashboard →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <button class="carousel-btn next-btn" aria-label="Next">
+        &#8594;
+      </button>
+    </div>
+
+    <!-- Written Case Studies -->
+    <div class="projects-label" style="margin-top: 48px;">
+      Case Studies
+    </div>
+    <div class="projects-grid text-grid">
+
+      <div class="project-card text-card">
+        <div class="project-content">
+          <div class="project-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div class="project-tags">
+            <span class="tag">SQL</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+          <h3>Customer Segmentation Analysis</h3>
+          <p>Segmented 99,000+ customer transactions across 10 malls
+          using the RFM model, identifying 5 customer groups. Top
+          customers generated $30.7M in revenue while lost customers
+          represented $16.4M in recoverable opportunity.</p>
+          <a href="https://www.linkedin.com/pulse/customer-segmentation-analysis-sql-leveraging-rfm-model-maj-ok-pja7e/"
+             target="_blank" rel="noopener noreferrer"
+             class="project-link">Read Case Study →</a>
+        </div>
+      </div>
+
+      <div class="project-card text-card">
+        <div class="project-content">
+          <div class="project-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            </svg>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Excel</span>
+            <span class="tag">Data Analysis</span>
+          </div>
+          <h3>Supply Chain Analysis</h3>
+          <p>Mapped supply chain data across multiple stages to surface
+          inefficiencies and propose strategic improvements, identifying
+          key demographic gaps and operational enhancement
+          opportunities.</p>
+          <a href="https://www.linkedin.com/pulse/supply-chain-analysis-excel-maj-ok-hdfhe/"
+             target="_blank" rel="noopener noreferrer"
+             class="project-link">Read Case Study →</a>
+        </div>
+      </div>
+
+      <div class="project-card text-card">
+        <div class="project-content">
+          <div class="project-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"/>
+              <line x1="12" y1="20" x2="12" y2="4"/>
+              <line x1="6" y1="20" x2="6" y2="14"/>
+            </svg>
+          </div>
+          <div class="project-tags">
+            <span class="tag">SQL</span>
+            <span class="tag">Data Analysis</span>
+          </div>
+          <h3>App Development Analysis</h3>
+          <p>Queried the Google Play Store dataset to identify the most
+          profitable app niches by category, download volume, and user
+          review trends, giving developers data-backed direction on
+          where to build.</p>
+          <a href="https://www.linkedin.com/pulse/data-driven-decisions-leveraging-google-play-store-data-maj-ok-zdnle/"
+             target="_blank" rel="noopener noreferrer"
+             class="project-link">Read Case Study →</a>
+        </div>
+      </div>
+
+      <div class="project-card text-card">
+        <div class="project-content">
+          <div class="project-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+          <div class="project-tags">
+            <span class="tag">SQL</span>
+            <span class="tag">Data Cleaning</span>
+          </div>
+          <h3>Data Cleaning with SQL</h3>
+          <p>Applied systematic SQL techniques to clean and prepare
+          raw data for reliable analysis, handling missing values,
+          duplicates, and inconsistencies across a real-world
+          dataset.</p>
+          <a href="https://www.linkedin.com/pulse/data-cleaning-sql-maj-ok-tic5c/"
+             target="_blank" rel="noopener noreferrer"
+             class="project-link">Read Case Study →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-img-col">
+          <div class="stats-block">
+            <div class="stat-item">
+              <span class="stat-number">7</span>
+              <span class="stat-unit">years</span>
+              <span class="stat-label">Operational business experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">99%</span>
+              <span class="stat-unit"></span>
+              <span class="stat-label">Accuracy rate maintained</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">5</span>
+              <span class="stat-unit">industries</span>
+              <span class="stat-label">Sectors analysed across projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">6+</span>
+              <span class="stat-unit">projects</span>
+              <span class="stat-label">Completed and published</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <div class="section-header" style="text-align:left">
+            <h2>About Me</h2>
+          </div>
+
+          <p class="about-intro">Some businesses have dashboards. Some
+          have spreadsheets. Most still cannot answer their most
+          important questions. I help them change that.</p>
+
+          <p class="about-body">I am a freelance data analyst skilled
+          in SQL, Tableau, and Excel. I transform raw data into clear
+          business insights, interactive dashboards, and KPI reports
+          that help businesses stop guessing and start deciding.</p>
+
+          <div class="about-services">
+            <div class="about-service-item">
+              <span class="service-icon">+</span>
+              <div>
+                <strong>SQL Querying and Data Cleaning</strong>
+                <p>I extract, validate, and transform datasets of
+                10,000 to 15,000+ records, building clean,
+                analysis-ready foundations from raw operational
+                data.</p>
+              </div>
+            </div>
+            <div class="about-service-item">
+              <span class="service-icon">+</span>
+              <div>
+                <strong>Dashboard Development and KPI Reporting</strong>
+                <p>I design interactive Tableau dashboards and
+                structured Excel reports that give stakeholders a
+                real-time view of what is working and what is not.</p>
+              </div>
+            </div>
+            <div class="about-service-item">
+              <span class="service-icon">+</span>
+              <div>
+                <strong>Exploratory Data Analysis</strong>
+                <p>I conduct structured EDA to surface trends,
+                performance gaps, and anomalies that would otherwise
+                stay buried in a spreadsheet.</p>
+              </div>
+            </div>
+            <div class="about-service-item">
+              <span class="service-icon">+</span>
+              <div>
+                <strong>Data Storytelling</strong>
+                <p>I do not just present findings. I build the
+                narrative around them, because insights that cannot
+                be communicated clearly do not drive change.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-differentiator">
+            <p class="about-diff-label">What Sets Me Apart</p>
+            <p class="about-body">Most analysts come from a purely
+            academic background. I bring seven years of operational
+            experience working in a real business environment,
+            tracking inventory data, working with warehouse management
+            systems, and maintaining a 99% accuracy rate across
+            high-volume daily workflows. My operational background
+            helps me understand how businesses actually run, making
+            me a better analyst for the businesses I serve.</p>
+          </div>
+
+          <div class="about-links">
+            <a href="https://www.linkedin.com/in/majiri-ok/"
+               target="_blank" rel="noopener noreferrer"
+               class="about-link">LinkedIn →</a>
+            <a href="https://github.com/MajiriOk"
+               target="_blank" rel="noopener noreferrer"
+               class="about-link">GitHub →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="contact-main-heading">Get In Touch</h2>
+      <div class="contact-grid">
+
+        <div class="contact-text">
+          <p class="contact-eyebrow">Let's Work Together</p>
+          <p class="contact-body">Have a data project in mind?
+          Whether it is a one-off analysis, a dashboard build,
+          or an ongoing reporting need, I would love to hear
+          about it.</p>
+          <div class="contact-details">
+            <a href="mailto:majiri_ok@yahoo.com"
+               class="contact-item">
+              <span class="contact-icon">✉</span>
+              majiri_ok@yahoo.com
+            </a>
+            <a href="https://www.linkedin.com/in/majiri-ok/"
+               target="_blank" rel="noopener noreferrer"
+               class="contact-item">
+              <span class="contact-icon">in</span>
+              LinkedIn
+            </a>
+            <a href="https://github.com/MajiriOk"
+               target="_blank" rel="noopener noreferrer"
+               class="contact-item">
+              <span class="contact-icon">gh</span>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-col">
+          <div class="form-card">
+            <p class="form-card-heading">Send a Message</p>
+            <form class="contact-form"
+                  action="https://formspree.io/f/maqanopg"
+                  method="POST">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name"
+                         placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email"
+                         placeholder="your@email.com" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="project-type">Project Type</label>
+                <select id="project-type" name="project-type">
+                  <option value="">Select a service</option>
+                  <option value="analysis">Data Analysis</option>
+                  <option value="dashboard">Dashboard Build</option>
+                  <option value="reporting">Reporting</option>
+                  <option value="cleaning">Data Cleaning</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4"
+                          placeholder="Tell me about your project"
+                          required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">
+                Send Message →
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__brand">Maj OK</span>
+      <span class="footer__copy">© 2025 Majiri OK. All rights reserved.</span>
+      <div class="footer__links">
+        <a href="https://www.linkedin.com/in/majiri-ok/" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+        <a href="https://github.com/MajiriOk" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
