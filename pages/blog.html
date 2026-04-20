@@ -149,46 +149,7 @@
       justify-content: center;
       flex-wrap: wrap;
     }
-    footer {
-      background: var(--color-charcoal);
-      padding: 32px 0;
-    }
-    .footer-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-    .footer-name {
-      font-size: 15px;
-      font-weight: 600;
-      color: var(--color-text-light);
-    }
-    .footer-tagline {
-      font-size: 13px;
-      color: var(--color-gold);
-    }
-    .footer-links {
-      display: flex;
-      gap: 20px;
-    }
-    .footer-links a {
-      font-size: 13px;
-      color: var(--color-muted);
-      text-decoration: none;
-    }
-    .footer-links a:hover {
-      color: var(--color-gold);
-    }
-    .footer-copy {
-      font-size: 12px;
-      color: var(--color-muted);
-      width: 100%;
-      text-align: center;
-      margin-top: 8px;
-    }
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .nav-links {
       display: none;
     }
@@ -274,25 +235,16 @@
   </div>
 </section>
 
-<footer>
-  <div class="container footer-inner">
-    <div class="footer-brand" style="display:flex;
-         align-items:center;gap:8px;">
-      <span class="footer-name">Maj OK</span>
-      <span class="brand-sep">|</span>
-      <span class="footer-tagline">Telling Data Stories</span>
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <span class="footer__brand">Maj OK</span>
+    <span class="footer__copy">© 2026 Majiri OK. All rights reserved.</span>
+    <div class="footer__links">
+      <a href="https://www.linkedin.com/in/majiri-ok/" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+      <a href="https://github.com/MajiriOk" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub</a>
+      <a href="https://www.upwork.com/freelancers/~015207a3173e05b9f4" target="_blank" rel="noopener noreferrer" class="footer__link">Upwork</a>
     </div>
-    <div class="footer-links">
-      <a href="https://www.linkedin.com/in/majiri-ok/"
-         target="_blank" rel="noopener noreferrer">
-         LinkedIn</a>
-      <a href="https://github.com/MajiriOk"
-         target="_blank" rel="noopener noreferrer">
-         GitHub</a>
-    </div>
-    <p class="footer-copy">
-      &copy; 2026 Majiri OK. All rights reserved.
-    </p>
   </div>
 </footer>
 
